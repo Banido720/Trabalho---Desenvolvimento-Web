@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - CineLoc</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>CineLoc</h1>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Catálogo</a></li>
+                <li><a href="#">Meus Filmes</a></li>
+                <li><button id="logoutBtn">Sair</button></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="search-section">
+            <input type="text" id="searchInput" placeholder="Buscar filmes...">
+            <select id="genreFilter">
+                <option value="">Todos os gêneros</option>
+                <option value="Ação">Ação</option>
+                <option value="Comédia">Comédia</option>
+                <option value="Drama">Drama</option>
+                <option value="Ficção Científica">Ficção Científica</option>
+            </select>
+        </section>
+        
+        <section class="movies-grid" id="moviesContainer">
+            <!-- Filmes serão carregados aqui via JavaScript -->
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 CineLoc - Todos os direitos reservados</p>
+    </footer>
+    
+    <script src="js/data.js"></script>
+    <script src="js/filmes.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>
